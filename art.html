@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="dark.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--   https://boxicons.com/      -->
+    <title>Art</title>
+    <link rel="website icon" type="png" href="image/logol.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul> 
+                <li class="deroulant">
+                    <a href="index.html" >
+                        <img src="image/logol.png" height="120px" width="120px" style="transition: none; transform: none;" >
+                    </a>
+                </li>
+                <li class="deroulant" ><a href="apropos.html">⛩️À propos de moi⛩️</a>
+                    <ul class="sous">
+                        <li><a href="apropos.html#Présentation">Présentation</a></li>
+                        <li><a href="apropos.html#Mon CV">Mon CV</a></li>
+                        <li><a href="apropos.html#Centre d'intérêt">Centre d'intérêt</a></li>
+                        <li><a href="apropos.html#Mes logiciels">Mes logiciels</a></li>
+                        <li><a href="apropos.html#Mes langages de programation">Mes langages de programation</a></li>
+                    </ul>
+                </li>
+                <li class="deroulant" ><a href="comp.html">⛩️Compétences⛩️</a>
+                    <ul class="sous">
+                        <li><a href="comp.html#Compétences cours">Compétences en informatique</a></li>
+                        <li><a href="comp.html#Compétences aquise">Compétences en art</a></li>
+                    </ul>
+                </li>
+                <li class="deroulant" ><a href="parcours.html">⛩️Parcours⛩️</a>
+                    <ul class="sous">
+                        <li><a href="parcours.html#Qu'est-ce que le BTS SIO ?">Qu'est-ce que le BTS SIO ?</a></li>
+                        <li><a href="parcours.html#Formation">Formation</a></li>
+                        <li><a href="parcours.html#Expérience professionnelle">Expérience professionnelle</a></li>
+                        <li><a href="parcours.html#Activités de stage">Activités de stage</a></li>
+                        <li><a href="parcours.html#Atelier professionnelle">Atelier professionnel</a></li>
+                    </ul>
+                </li>
+                 <li class="deroulant" ><a href="veille.html">⛩️Veille informatique⛩️</a>
+                    <ul class="sous">
+                        <li><a href="veille.html#Qu'est-ce qu'une veille ?">Qu'est-ce qu'une veille ?</a></li>
+                        <li><a href="veille.html#Sujet de ma veille">Sujet de ma veille</a></li>
+                        <li><a href="veille.html#Actualités">Actualités de veille</a></li>
+                    </ul>
+                </li> 
+                <li class="deroulant" ><a href="art.html">⛩️Art⛩️</a>
+                    <ul class="sous">
+                        <li><a href="art.html#Qu'est-ce que l'art ?">Qu'est-ce que l'art ?</a></li>
+                        <li><a href="art.html#Mes inspirations">Mes inspirations</a></li>
+                        <li><a href="art.html#Mes oeuvres">Mes oeuvres</a></li>
+                    </ul>
+                </li>        
+            </ui>
+        </nav>
+</header>
+            <hr> <!-- la barre jaune  -->
+        <hr>
+        <br><br>
+        <h1><i class='bx bx-highlight'></i>Art<i class='bx bx-highlight'></i></h1>
+        <br><br><hr><hr>
+</body>
+<footer>
+    <!-- l'image du japon est stocker içi -->
+</footer>
+<hr><hr>
+
+<br><br><br><br><br><br><br><h3><p id="Qu'est-ce que l'art ?"></p> .Qu'est-ce que l'art ?. </h3> <br><br>
+<p>L'art regroupe les œuvres humaines destinées à toucher les sens et les émotions du public. Il peut s'agir aussi bien de peinture que de sculpture, vidéo, photo, dessin, littérature, musique, danse…
+<br>L’art est une activité, le produit de cette activité ou l'idée que l'on s'en fait, qui s'adresse délibérément aux sens, aux émotions, aux intuitions et à l'intellect.
+<br><img src="image/loader.gif" width="400px" height="300px" style="transition: none; transform: none;">
+</p>
+
+<br><br><br><br><br><br><br><h3><p id="Mes inspirations"></p> .Mes inspirations. </h3> <br><br>
+<p>en attente...<br><img src="image/loading.gif" width="400px" height="300px" style="transition: none; transform: none;"></p>
+
+<br><br><br><br><br><br><br><h3><p id="Mes oeuvres"></p> .Mes oeuvres. </h3> <br><br>
+<p>en attente...<br><img src="image/load.gif" width="400px" height="300px" style="transition: none; transform: none;"></p>
+
+<br><br><br><br><br><hr><hr><foot>
+    <!-- l'image du japon est stocker içi -->
+</foot><hr><hr>
+<br><p>Copyright 2024 © Julie</p><br>
+
+<ul class="icon">
+    <a href="https://github.com/" target="_blank"><i class='bx bxl-github' target="_blank"></i></a>
+    <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram' target="_blank"></i></a>
+</ul>
+</html>
+<div id="scrollUp">
+    <a href="#top"><img src="image/top.png"/></a>
+</div>
+<button id="theme-btn">Changer de theme ☾ ☀︎</button>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script>
+    jQuery(function(){
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 200 ) { 
+                    $('#scrollUp').css('right','10px');
+                } else { 
+                    $('#scrollUp').removeAttr( 'style' );
+                }
+            });
+        });
+    });
+</script>
+<script>
+    var toggle_btn = document.getElementById('theme-btn');
+    
+    var body = document.getElementsByTagName('body')[0];
+    
+    var dark_theme_class = 'dark';
+    
+    toggle_btn.addEventListener('click', function() {
+    
+     if (body.classList.contains(dark_theme_class)) {
+    
+     body.classList.remove(dark_theme_class);
+    }
+     else {
+    
+     body.classList.add(dark_theme_class);
+    
+    }
+    });
+    </script>

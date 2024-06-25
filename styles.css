@@ -1,0 +1,340 @@
+/* */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{   
+    background-color: rgb(245, 231, 231); 
+    /*cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' style='font-size:40px;'><text y='40' x='-5'>🪐</text></svg>"), auto; */
+    cursor: url(image/cat.png), auto;
+}
+body{  
+    background-color: rgb(245, 231, 231);
+    text-size-adjust: 500px;
+}
+/*-----------------------*/
+/* Action de scroll lente */
+html, body {
+    scroll-behavior: smooth;
+}
+header{  
+    background-image: url(image/japon.png);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+}
+footer{  
+    background-image: url(image/japon.png);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    transform: scaleX(-1);
+    filter: blur(2px);
+}
+foot{   
+    background-image: url(image/japon.png);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    filter: blur(2px);
+}
+/*-----------------------*/
+/* les lignes jaune */
+hr{  
+    border: 2px solid rgb(238, 218, 104);
+}
+/*-----------------------*/
+/* Les titres */
+h1{ 
+    position: relative;
+    text-align: center;
+    color: rgb(70, 70, 70);
+    font-size: 9vw;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #0400ff75, #ff000085);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: center;
+    text-align: center;
+    text-decoration: underline overline dotted rgba(235, 172, 172, 0.089);
+    text-shadow: 6px 4px 0px rgba(245, 231, 231, 0.192);
+}
+h2{   
+    position: relative;
+    text-align: center;
+    color: rgb(70, 70, 70);
+    font-size: 4vw;
+    background: linear-gradient(90deg, #0400ff75, #ff000085);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: center;
+    text-align: center;
+    text-shadow: 3px 3px 0px rgba(245, 231, 231, 0.192);
+}
+h3{
+    position: relative;
+    text-align: center;
+    color: rgb(70, 70, 70);
+    font-size: 3vw;
+    background: linear-gradient(90deg, #5451ffb0, #00ff2a85);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: center;
+    text-align: center;
+    text-shadow: 3px 3px 0px rgba(245, 231, 231, 0.192);
+    text-decoration: underline overline dotted rgba(235, 172, 172, 0.192);
+}
+p{
+    color: rgb(124, 92, 92);
+    font-size: 1vw;
+    text-align: center;
+}
+.icon{
+    text-align: center;
+    font-size: 200%;
+}
+/*-----------------------*/
+/* Fond du header */
+nav{    
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(98, 127, 206, 0.89);
+    background: linear-gradient(90deg, #a839f1ad, #ff004085);
+    position: fixed;
+    top: 0px;
+    z-index:1000;
+}
+/*-----------------------*/
+/* Modification des sous-titres */
+nav ul li{  
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+nav ul::after{  
+    content: "";
+    display: table;
+    clear: both;
+}
+/*-----------------------*/
+/* Menu fixe en haut de l'écran */
+nav a{   
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    border-bottom: 2px solid transparent;
+    padding: 20px 0px;
+}
+/*-----------------------*/
+/* Action si on passe en-dessus du menu avec la souris */
+nav a:hover{   
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid gold;
+    cursor: url(image/cater.png), auto;
+    color: orange;
+}
+/*-----------------------*/
+/* élément dans le menu */
+.sous{  
+    display: none;
+    box-shadow: 0px 1px 2 px #ccc;
+    background-color: rgb(173, 188, 230, 0.89);
+    background: linear-gradient(90deg, #a739f170, #ff004050);
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    list-style-type: none;
+}
+/*-----------------------*/
+/* Apparation du "sous" quand on passe en dessus du menu déroulant */
+nav > ul li:hover .sous{  
+    display: block;
+}
+.sous li{ 
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{  
+    padding: 10px;
+    border-bottom: none;
+}
+/*-----------------------*/
+/* Changement de couleur quand on passe sur le menu déroulant */
+.sous a:hover{  
+    border-bottom: none;
+    background-color: rgb(238, 218, 104);
+}
+/*-----------------------*/
+/* Possibilité d'éspacement du menu déroulant */
+.deroulant {  
+    width: 11%;
+    margin-left: 3%;
+    margin-right: 2%;
+    list-style-type: none;
+    position: sticky;
+    top: 0px;
+}
+.conteneur{
+    margin : 50px 20px;
+    height : 1500px;
+}
+/*-----------------------*/
+/* Texte déroulant de gauche à droite */
+marquee{
+    color: #fff;
+    animation-delay: 15s;
+    background: linear-gradient(90deg, #a839f1ad, #ff004085);
+    font-size: 35px;
+}
+iframe{
+    border: 200px solid black; 
+    display: block;
+    margin: 0 auto; 
+
+}
+/*-----------------------*/
+/* Les images */
+img{
+    transition: all .5s;
+}
+img:hover{
+    transform: scale(1.4);
+    cursor: url(image/cat.png), auto;
+}
+/*-----------------------*/
+/*-----------------------*/
+/* Les actions de surlignage de texte quand celui-ci est séléctionner */
+html::selection{
+    background-color: rgb(238, 218, 104);
+}
+h1::selection{
+    background-color: rgba(255, 239, 149, 0.623);
+    color: #8daf95;
+}
+h2::selection{
+    background-color: rgba(255, 239, 149, 0.623);
+    color: #8daf95;
+}
+h3::selection{
+    background-color: rgba(255, 239, 149, 0.623);
+    color: #8daf95;
+}
+p::selection{
+    background-color: rgba(255, 239, 149, 0.623);
+    color: #8daf95;
+}
+br::selection{
+    background-color: rgba(255, 239, 149, 0.623);
+    color: #8daf95;
+}
+img::selection{
+    background-color: rgba(255, 239, 149, 0.623);
+    color: #8daf95;
+}
+.sous::selection{
+    background-color: rgba(255, 239, 149, 0.623);
+    color: #8daf95;
+}
+.conteneur::selection{
+    background-color: rgba(255, 239, 149, 0.623);
+    color: #8daf95;
+}
+.deroulant::selection{
+    background-color: rgba(255, 239, 149, 0.623);
+    color: #8daf95;
+}
+header::selection{
+    background-color: rgba(255, 239, 149, 0.623);
+    color: #8daf95;
+}
+nav::selection{
+    background-color: rgba(255, 239, 149, 0.623);
+    color: #8daf95;
+}
+ul::selection{
+    background-color: rgba(255, 239, 149, 0.623);
+    color: #8daf95;
+}
+li::selection{
+    background-color: rgba(255, 239, 149, 0.623);
+    color: #8daf95;
+}
+head::selection{
+    background-color: rgba(255, 239, 149, 0.623);
+    color: #8daf95;
+}
+/*-----------------------*/
+/* Bouton du "cv" */
+.button-1 {
+  align-items: center;
+  position: relative;
+  float: right;
+  right: 45%;
+  background-image: linear-gradient(144deg,#5451ffaf, #00eeffb9 50%,#00ff2aa6);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: url(image/cater.png), auto;
+}
+.button-1:active,
+.button-1:hover {
+  outline: 0;
+}
+/*-----------------------*/
+/* Intérieur du bouton "cv" */
+.button-1 span {
+  background-color: rgb(233, 212, 212);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+.button-1:hover span {
+  background: none;
+}
+@media (min-width: 768px) {
+  .button-1 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+/*-----------------------*/
+/* Action de passage de la souris sur le bouton scrollup */
+#scrollUp:hover{
+    cursor: url(image/cater.png), auto;
+}
+/*-----------------------*/
+/* position du bouton scrollup */
+#scrollUp
+{
+    position: fixed;
+    bottom : 10px;
+    right: -100px;
+    opacity: 0.5;
+    cursor: url(image/cater.png), auto;
+}

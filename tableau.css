@@ -1,0 +1,97 @@
+/* Définit les couleurs des barres intérieurs */
+:root {
+    --success: #6764ff75;
+    --progress: #ff555585;
+}
+/*-----------------------*/
+/* éléments permettent de gérer la longueur de la barre compétences */
+.container {
+    max-width: 720px;
+    margin: 0px auto;
+    width: 100%;
+}
+/*-----------------------*/
+/* élément de la barre de compétences */
+.progressbar-wrapper {
+    background-color: rgb(233, 212, 212);
+    color: white;
+    border-radius: 15px;
+    width: 100%;
+}
+/*-----------------------*/
+/* éléments permettant de changer l'écriture dans les barres intérieurs */
+.progressbar {
+    background-color: var(--progress);
+    color: white;
+    padding: 1rem;
+    text-align: right;
+    font-size: 20px;
+    border-radius: 15px;
+}
+/*-----------------------*/
+/* Choix de ligne (1 ou 2) qui aura quelle couleur */
+.progressbar[id="1"] {
+     background-color: var(--progress);
+}
+.progressbar[id="2"] {
+     background-color: var(--success);
+}
+/*-----------------------*/
+/* élément permettent de changer la taille des barres intérieurs */
+.html {
+    width: 70%;
+}
+.css {
+    width: 70%;
+}
+.java {
+    width: 30%;
+}
+.python {
+    width: 10%;
+}
+.javaS {
+    width: 1%;
+}
+.php {
+    width: 20%;
+}
+.mysql {
+    width: 10%;
+}
+.vscode {
+    width: 80%;
+}
+.github {
+    width: 70%;
+}
+.xampp {
+    width: 30%;
+}
+.my {
+    width: 20%;
+}
+.int {
+    width: 10%;
+}
+.ibis {
+    width: 90%;
+}
+.figma {
+    width: 70%;
+}
+.canva {
+    width: 50%;
+}
+.blender {
+    width: 5%;
+}
+.krita {
+    width: 5%;
+}
+.power {
+    width: 1%;
+}
+.sketch {
+    width: 10%;
+}

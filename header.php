@@ -1,0 +1,50 @@
+<header>
+    <nav>
+        <ul> 
+            <li class="deroulant">
+                <a href="index.html" >
+                    <img src="image/logol.png" height="120px" width="120px" style="transition: none; transform: none;"style="transition: none; transform: none;" >
+                </a>
+            </li>
+            <li class="deroulant" ><a href="apropos.html">⛩️À propos de moi⛩️</a>
+                <ul class="sous">
+                    <li><a href="apropos.html#Présentation">Présentation</a></li>
+                    <li><a href="apropos.html#Mon CV">Mon CV</a></li>
+                    <li><a href="apropos.html#Centre d'intérêt">Centre d'intérêt</a></li>
+                    <li><a href="apropos.html#Mes logiciels">Mes logiciels</a></li>
+                    <li><a href="apropos.html#Mes langages de programation">Mes langages de programation</a></li>
+                </ul>
+            </li>
+            <li class="deroulant" ><a href="comp.html">⛩️Compétences⛩️</a>
+                <ul class="sous">
+                    <li><a href="comp.html#Compétences cours">Compétences en informatique</a></li>
+                    <li><a href="comp.html#Compétences aquise">Compétences en art</a></li>
+                    <li><a href="comp.html#Projets réaliser">Projets réaliser</a></li>
+                </ul>
+            </li>
+            <li class="deroulant" ><a href="parcours.html">⛩️Parcours⛩️</a>
+                <ul class="sous">
+                    <li><a href="parcours.html#Qu'est-ce que le BTS SIO ?">Qu'est-ce que le BTS SIO ?</a></li>
+                    <li><a href="parcours.html#Formation">Formation</a></li>
+                    <li><a href="parcours.html#Expérience professionnelle">Expérience professionnelle</a></li>
+                    <li><a href="parcours.html#Activités de stage">Activités de stage</a></li>
+                    <li><a href="parcours.html#Atelier professionnelle">Atelier professionnel</a></li>
+                </ul>
+            </li>
+             <li class="deroulant" ><a href="veille.html">⛩️Veille informatique⛩️</a>
+                <ul class="sous">
+                    <li><a href="veille.html#Qu'est-ce qu'une veille ?">Qu'est-ce qu'une veille ?</a></li>
+                    <li><a href="veille.html#Sujet de ma veille">Sujet de ma veille</a></li>
+                    <li><a href="veille.html#Actualités">Actualités de veille</a></li>
+                </ul>
+            </li> 
+            <li class="deroulant" ><a href="art.html">⛩️Art⛩️</a>
+                <ul class="sous">
+                    <li><a href="art.html#Qu'est-ce que l'art ?">Qu'est-ce que l'art ?</a></li>
+                    <li><a href="art.html#Mes inspirations">Mes inspirations</a></li>
+                    <li><a href="art.html#Mes oeuvres">Mes oeuvres</a></li>
+                </ul>
+            </li>        
+        </ui>
+    </nav>
+</header>

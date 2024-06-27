@@ -6,7 +6,8 @@
 html{   
     background-color: rgb(245, 231, 231); 
     /*cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' style='font-size:40px;'><text y='40' x='-5'>🪐</text></svg>"), auto; */
-    cursor: url(image/cat.png), auto;
+    /*cursor: url(image/cat.png), auto;*/
+    cursor: default;
 }
 body{  
     background-color: rgb(245, 231, 231);
@@ -138,7 +139,7 @@ nav a{
 nav a:hover{   
     color: rgb(255, 255, 255);
     border-bottom: 2px solid gold;
-    cursor: url(image/cater.png), auto;
+    /*cursor: url(image/cater.png), auto;*/
     color: orange;
 }
 /*-----------------------*/
@@ -196,10 +197,10 @@ marquee{
     font-size: 35px;
 }
 iframe{
-    border: 200px solid black; 
-    display: block;
     margin: 0 auto; 
-
+    width: 800px;
+    height: 500px;
+    display: block;
 }
 /*-----------------------*/
 /* Les images */
@@ -208,69 +209,6 @@ img{
 }
 img:hover{
     transform: scale(1.4);
-    cursor: url(image/cat.png), auto;
-}
-/*-----------------------*/
-/*-----------------------*/
-/* Les actions de surlignage de texte quand celui-ci est séléctionner */
-html::selection{
-    background-color: rgb(238, 218, 104);
-}
-h1::selection{
-    background-color: rgba(255, 239, 149, 0.623);
-    color: #8daf95;
-}
-h2::selection{
-    background-color: rgba(255, 239, 149, 0.623);
-    color: #8daf95;
-}
-h3::selection{
-    background-color: rgba(255, 239, 149, 0.623);
-    color: #8daf95;
-}
-p::selection{
-    background-color: rgba(255, 239, 149, 0.623);
-    color: #8daf95;
-}
-br::selection{
-    background-color: rgba(255, 239, 149, 0.623);
-    color: #8daf95;
-}
-img::selection{
-    background-color: rgba(255, 239, 149, 0.623);
-    color: #8daf95;
-}
-.sous::selection{
-    background-color: rgba(255, 239, 149, 0.623);
-    color: #8daf95;
-}
-.conteneur::selection{
-    background-color: rgba(255, 239, 149, 0.623);
-    color: #8daf95;
-}
-.deroulant::selection{
-    background-color: rgba(255, 239, 149, 0.623);
-    color: #8daf95;
-}
-header::selection{
-    background-color: rgba(255, 239, 149, 0.623);
-    color: #8daf95;
-}
-nav::selection{
-    background-color: rgba(255, 239, 149, 0.623);
-    color: #8daf95;
-}
-ul::selection{
-    background-color: rgba(255, 239, 149, 0.623);
-    color: #8daf95;
-}
-li::selection{
-    background-color: rgba(255, 239, 149, 0.623);
-    color: #8daf95;
-}
-head::selection{
-    background-color: rgba(255, 239, 149, 0.623);
-    color: #8daf95;
 }
 /*-----------------------*/
 /* Bouton du "cv" */
@@ -298,7 +236,7 @@ head::selection{
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
-  cursor: url(image/cater.png), auto;
+  /*cursor: url(image/cater.png), auto;*/
 }
 .button-1:active,
 .button-1:hover {
@@ -324,11 +262,6 @@ head::selection{
   }
 }
 /*-----------------------*/
-/* Action de passage de la souris sur le bouton scrollup */
-#scrollUp:hover{
-    cursor: url(image/cater.png), auto;
-}
-/*-----------------------*/
 /* position du bouton scrollup */
 #scrollUp
 {
@@ -336,5 +269,9 @@ head::selection{
     bottom : 10px;
     right: -100px;
     opacity: 0.5;
-    cursor: url(image/cater.png), auto;
+}
+
+.frame{
+    height: 550px;
+    width: 500px;
 }

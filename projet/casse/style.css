@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #F1E6EE;
+    cursor: default;
+    background-image: url(japon.jpg);
+    background-size: cover;
+    backdrop-filter: blur(5px);
+}
+/* Le conteneur du jeu */
+#conteneur {
+    width: 400px;
+    height: 300px;
+    border: 1px solid #333;
+    margin: 0 auto;
+    background: #FFF;
+    text-align: center;
+    
+}
+h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #88b0fcd2;
+    text-transform: uppercase;
+    font-size: 2vw;
+    background: linear-gradient(90deg, #FF5733, #FFC300, #C70039, #900C3F, #581845);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: roboto Mono;
+}
+h2{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+p{
+    color: rgb(255, 255, 255);
+}
+
+/* La carte de jeu */
+#game-container {
+    text-align: center;
+    background-color: #272727;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px #181818; /* Effet d'ombre */
+    max-width: 600px; /* Largeur maximale du cadre */
+    width: 80%; /* Largeur par défaut */
+}

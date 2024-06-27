@@ -13,13 +13,13 @@
             <ul> 
                 <li class="deroulant">
                     <a href="index.html" >
-                        <img src="image/logol.png" height="120px" width="120px" style="transition: none; transform: none;" >
+                        <img src="image/logol.png" height="120px" width="120px" style="transition: none; transform: none; cursor: pointer;" >
                     </a>
                 </li>
                 <li class="deroulant" ><a href="apropos.html">⛩️À propos de moi⛩️</a>
                     <ul class="sous">
                         <li><a href="apropos.html#Présentation">Présentation</a></li>
-                        <li><a href="apropos.html#Mon CV">Mon CV</a></li>
+                        <li><a href="apropos.html#Mon CV">Mon curriculum vitae</a></li>
                         <li><a href="apropos.html#Centre d'intérêt">Centre d'intérêt</a></li>
                         <li><a href="apropos.html#Mes logiciels">Mes logiciels</a></li>
                         <li><a href="apropos.html#Mes langages de programation">Mes langages de programation</a></li>
@@ -29,6 +29,7 @@
                     <ul class="sous">
                         <li><a href="comp.html#Compétences cours">Compétences en informatique</a></li>
                         <li><a href="comp.html#Compétences aquise">Compétences en art</a></li>
+                        <li><a href="comp.html#Projets réaliser">Projets réaliser</a></li>
                     </ul>
                 </li>
                 <li class="deroulant" ><a href="parcours.html">⛩️Parcours⛩️</a>
@@ -56,7 +57,7 @@
                 </li>        
             </ui>
         </nav>
-</header>
+    </header>
             <hr> <!-- la barre jaune  -->
         <hr>
         <br><br>
@@ -71,60 +72,31 @@
 <br><br><br><br><br><br><br><h3><p id="Qu'est-ce que l'art ?"></p> .Qu'est-ce que l'art ?. </h3> <br><br>
 <p>L'art regroupe les œuvres humaines destinées à toucher les sens et les émotions du public. Il peut s'agir aussi bien de peinture que de sculpture, vidéo, photo, dessin, littérature, musique, danse…
 <br>L’art est une activité, le produit de cette activité ou l'idée que l'on s'en fait, qui s'adresse délibérément aux sens, aux émotions, aux intuitions et à l'intellect.
-<br><img src="image/loader.gif" width="400px" height="300px" style="transition: none; transform: none;">
+<br>
 </p>
 
 <br><br><br><br><br><br><br><h3><p id="Mes inspirations"></p> .Mes inspirations. </h3> <br><br>
-<p>en attente...<br><img src="image/loading.gif" width="400px" height="300px" style="transition: none; transform: none;"></p>
+<p>en attente...<br><img src="image/loader.gif" width="400px" height="300px" style="transition: none; transform: none;"></p>
 
 <br><br><br><br><br><br><br><h3><p id="Mes oeuvres"></p> .Mes oeuvres. </h3> <br><br>
-<p>en attente...<br><img src="image/load.gif" width="400px" height="300px" style="transition: none; transform: none;"></p>
+<p>en attente...<br><img src="image/loader.gif" width="400px" height="300px" style="transition: none; transform: none;"></p>
 
 <br><br><br><br><br><hr><hr><foot>
     <!-- l'image du japon est stocker içi -->
 </foot><hr><hr>
 <br><p>Copyright 2024 © Julie</p><br>
 
-<ul class="icon">
-    <a href="https://github.com/" target="_blank"><i class='bx bxl-github' target="_blank"></i></a>
-    <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram' target="_blank"></i></a>
-</ul>
 </html>
 <div id="scrollUp">
-    <a href="#top"><img src="image/top.png"/></a>
+    <a href="#top"><img src="image/top.png"  style="transition: none; transform: none; cursor: pointer;"/></a>
 </div>
-<button id="theme-btn">Changer de theme ☾ ☀︎</button>
+</div>
+<button id="theme-btn" style="cursor: pointer;">Changer de theme ☾ ☀︎</button>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-<script>
-    jQuery(function(){
-        $(function () {
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 200 ) { 
-                    $('#scrollUp').css('right','10px');
-                } else { 
-                    $('#scrollUp').removeAttr( 'style' );
-                }
-            });
-        });
-    });
-</script>
-<script>
-    var toggle_btn = document.getElementById('theme-btn');
-    
-    var body = document.getElementsByTagName('body')[0];
-    
-    var dark_theme_class = 'dark';
-    
-    toggle_btn.addEventListener('click', function() {
-    
-     if (body.classList.contains(dark_theme_class)) {
-    
-     body.classList.remove(dark_theme_class);
-    }
-     else {
-    
-     body.classList.add(dark_theme_class);
-    
-    }
-    });
-    </script>
+<!--------------------------------------->
+<!-- Bouton scroll up -->
+<script src="scroll.js"></script>
+<!--------------------------------------->
+<!-- Bouton dark -->
+<script src="dark.js"></script>
+<!-- <iframe src="header.html"></iframe>-->

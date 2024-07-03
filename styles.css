@@ -140,7 +140,7 @@ nav a:hover{
     color: rgb(255, 255, 255);
     border-bottom: 2px solid gold;
     /*cursor: url(image/cater.png), auto;*/
-    color: orange;
+    color: rgb(247, 225, 184);
 }
 /*-----------------------*/
 /* élément dans le menu */
@@ -172,7 +172,7 @@ nav > ul li:hover .sous{
 /* Changement de couleur quand on passe sur le menu déroulant */
 .sous a:hover{  
     border-bottom: none;
-    background-color: rgb(238, 218, 104);
+    background-color: #dacd83a4;
 }
 /*-----------------------*/
 /* Possibilité d'éspacement du menu déroulant */
@@ -245,7 +245,7 @@ img:hover{
 /*-----------------------*/
 /* Intérieur du bouton "cv" */
 .button-1 span {
-  background-color: rgb(233, 212, 212);
+  background-color: #e9d4d4;
   padding: 16px 24px;
   border-radius: 6px;
   width: 100%;

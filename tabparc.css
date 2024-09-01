@@ -1,0 +1,69 @@
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 5px solid rgb(104, 238, 111);
+    background-color: #9bbbd6;
+}
+/*-----------------------*/
+/* Colonne Auteur action largeur */
+thead th:nth-child(1) {
+    width: 10%;
+}
+/* Colonne Description action largeur */
+thead th:nth-child(2) {
+    width: 7%;
+}
+/* Colonne Date action largeur */
+thead th:nth-child(3) {
+    width: 20%;
+}
+/* Colonne Lien action largeur */
+thead th:nth-child(4) {
+    width: 5%;
+}
+thead th:nth-child(5) {
+    width: 3%;
+}
+/*-----------------------*/
+/* Ecriture dans le tableau */
+td {
+    padding: 20px;
+    color: rgb(36, 58, 156);
+    font-size: 1vw;
+}
+th{
+    padding: 20px;
+    color: #3b3333;
+    font-size: 1vw;
+}
+/*-----------------------*/
+/* Colonnes des extrémités du tableau */
+thead,tfoot {
+    background: url(image/japonin.png);
+    color: white;
+    text-shadow: 1px 1px 1px #eeda68;
+}
+/*-----------------------*/
+/* Encadrement intérieur du tableau/haut et bas */
+thead th,tfoot th,tfoot td {
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.5)
+    );
+    border: 7px solid #ffd900;
+}
+
+tbody th, tbody td {
+    border: 5px solid #eeda6896;
+}
+
+/*-----------------------*/
+/* Les éléments changent la couleur des colonnes */
+tbody tr:nth-child(odd) {
+    background-color: rgba(152, 194, 250, 0.452);
+}
+tbody tr:nth-child(even) {
+    background-color: #a4c8d8be;
+}

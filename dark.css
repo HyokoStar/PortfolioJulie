@@ -1,0 +1,63 @@
+/*-----------------------*/
+/* position du bouton changement de couleur */
+#theme-btn{
+    position: fixed;
+    bottom : 10px;
+    left: 1px;
+    opacity: 0.5;
+    cursor: url(image/cater.png), auto;
+    background-color: rgb(233, 212, 212);
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: 300ms;
+    background-image: linear-gradient(144deg,#5451ffaf, #00eeffb9 50%,#00ff2aa6);
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+}
+/*-----------------------*/
+/* éléments changent de couleur */
+.dark {
+    background-color: rgb(32, 25, 25);
+    color: white;
+
+    #theme-btn{
+        filter: invert(100%)
+    }
+    foot{
+        filter: brightness(50%);
+    }
+    footer{
+        filter: brightness(50%);
+    }
+    hr{
+        filter: brightness(50%);
+    }
+    marquee{
+        filter: brightness(50%);
+    }
+    img{
+        filter: brightness(50%);
+    }    
+    nav{
+        filter: brightness(80%);
+    }
+    image.image/japon{
+        filter: brightness(50%);
+    }
+    .button-1{
+        filter: brightness(50%);
+    }
+    #table{
+        filter: brightness(50%);
+    }
+    #container{
+        filter: brightness(50%);
+    }
+    #progressbar-wrapper{
+        filter: brightness(50%);
+    }
+    #progressbar html{
+        filter: brightness(50%);
+    }
+}

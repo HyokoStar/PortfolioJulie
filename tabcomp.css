@@ -8,18 +8,22 @@ table {
 /*-----------------------*/
 /* Colonne Auteur action largeur */
 thead th:nth-child(1) {
-    width: 1%;
+    width: 5%;
 }
 /* Colonne Description action largeur */
 thead th:nth-child(2) {
-    width: 2%;
+    width: 10%;
 }
 /* Colonne Date action largeur */
 thead th:nth-child(3) {
-    width: 20%;
+    width: 5%;
 }
 /* Colonne Lien action largeur */
 thead th:nth-child(4) {
+    width: 35%;
+}
+/* Colonne Lien action largeur */
+thead th:nth-child(5) {
     width: 5%;
 }
 /*-----------------------*/

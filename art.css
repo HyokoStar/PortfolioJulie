@@ -3,12 +3,9 @@
     margin: 0px;
     padding: 0px;
 }
-*::selection{
-    color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.158);
-}
 html{   
     background-color: rgb(245, 231, 231); 
+    /*cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' style='font-size:40px;'><text y='40' x='-5'>🪐</text></svg>"), auto; */
     /*cursor: url(image/cat.png), auto;*/
     cursor: default;
 }
@@ -48,7 +45,13 @@ foot{
 /*-----------------------*/
 /* les lignes jaune */
 hr{  
-    border: 2px solid rgb(238, 218, 104);
+    border: 2px solid #e9d4d4;
+}
+/*-----------------------*/
+/* droit */
+.droit{
+    color: rgb(124, 92, 92);
+    text-shadow: 1px 1px 1px #ffffffaf;
 }
 /*-----------------------*/
 /* Les titres */
@@ -64,6 +67,7 @@ h1{
     -webkit-text-fill-color: transparent;
     display: center;
     text-align: center;
+    text-decoration: underline overline dotted rgba(235, 172, 172, 0.089);
     text-shadow: 6px 4px 0px rgba(245, 231, 231, 0.192);
 }
 h2{   
@@ -193,84 +197,9 @@ nav > ul li:hover .sous{
     margin : 50px 20px;
     height : 1500px;
 }
-/*-----------------------*/
-/* Texte déroulant de gauche à droite (marquee) */
-.marquee {
-    color: #fff;
-    background: linear-gradient(90deg, #a839f1ad, #ff004085);
-    font-size: 35px;
-    position: relative;
-    width: 100vw;
-    max-width: 100%;
-    height: 60px;
-    overflow-x: hidden;
-}
-.track {
-    position: absolute;
-    white-space: nowrap;
-    will-change: transform;
-    animation: marquee 25s linear infinite;
-}
-@keyframes marquee {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
-}
-/*-----------------------*/
-/* droit */
-.droit{
-    color: rgb(124, 92, 92);
-    text-shadow: 1px 1px 1px #ffffffaf;
-}
-/*-----------------------*/
-/* Bouton du "cv" */
-.button-1 {
-  align-items: center;
-  position: relative;
-  float: right;
-  right: 45%;
-  background-image: linear-gradient(144deg,#5451ffaf, #00eeffb9 50%,#00ff2aa6);
-  border: 0;
-  border-radius: 8px;
-  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  display: flex;
-  font-family: Phantomsans, sans-serif;
-  font-size: 20px;
-  justify-content: center;
-  line-height: 1em;
-  max-width: 100%;
-  min-width: 140px;
-  padding: 3px;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  /*cursor: url(image/cater.png), auto;*/
-}
-.button-1:active,
-.button-1:hover {
-  outline: 0;
-}
-/*-----------------------*/
-/* Intérieur du bouton "cv" */
-.button-1 span {
-  background-color: #e9d4d4;
-  padding: 16px 24px;
-  border-radius: 6px;
-  width: 100%;
-  height: 100%;
-  transition: 300ms;
-}
-.button-1:hover span {
-  background: none;
-}
-@media (min-width: 768px) {
-  .button-1 {
-    font-size: 24px;
-    min-width: 196px;
-  }
+iframe{
+    margin: 0 auto; 
+    display: block;
 }
 /*-----------------------*/
 /* position du bouton scrollup */
@@ -281,17 +210,10 @@ nav > ul li:hover .sous{
     right: -100px;
     opacity: 0.5;
 }
+
 .frame{
     height: 550px;
     width: 500px;
-}
-/*-----------------------*/
-/* les liens des tableux */
-.texte{
-    color: rgb(36, 58, 156);
-}
-.texte:hover{
-    color: #ff0000;
 }
 /*-----------------------*/
 /* Les images */
@@ -300,43 +222,79 @@ nav > ul li:hover .sous{
     height: 120px;
     cursor: pointer;
 }
-.propos{
-    width: 150px;
-    height: 150px;
-    transition: all .5s;
-}
-.propos:hover{
-    transform: scale(1.2);
-}
-.folder{
-    width: 50px;
-    height:50px;
-    cursor: pointer;
-    transition: all .5s;
-}
-.folder:hover{
-    transform: scale(1.5);
-}
-.stage{
-    width: 500px;
-    height:300px;
-}
 .image{
     width: 150px;
     height: 150px;
     image-rendering: auto;
     margin-left: 10%;
-    filter: grayscale(0%);
     display: block;
     margin: 0 auto;
 }
 .image:hover{
-    opacity: 50%;
+    filter: invert(100%);
 }
-iframe{
-    width: 700px;
-    height: 450px;
-    text-align: center;
+.irage2{  
+    display: none;
+    box-shadow: 0px 1px 2 px #ccc;
+    background-color: rgb(173, 188, 230, 0.89);
+    background: linear-gradient(90deg, #a739f170, #ff004050);
+    position: absolute;
+    width: 10%;
+    z-index: 10;
+    list-style-type: none;
+}
+img :hover {  
+    display: block;
+}
+
+.irage p{  
+    padding: 10px;
+    border-bottom: none;
+}
+/*-----------------------*/
+/* Changement de couleur quand on passe sur le menu déroulant */
+.irage p:hover{  
+    border-bottom: none;
+    background-color: #dacd83a4;
+}
+/*-----------------------*/
+
+.oeuvres{
+    width: 270px;
+    height: 270px;
+    position: relative;
+    margin-left: 5%;
+    transition: all .5s;
+    border: 3px solid rgb(124, 92, 92);
+}
+.oeuvres:hover{
+    transform: scale(1.2);
+}
+
+.artist{
+    color: rgb(124, 92, 92);
+    margin-left: -1%;    
+    text-align: justify;
+    width: 150px;
+}
+
+a {
+    display:inline-block;
+}
+
+.procésus{
+    width: 270px;
+    height: 270px;
+    border: 3px solid rgb(124, 92, 92);
+}
+.surtexte{
+    opacity: 0;
+    filter : alpha(opacity=0);
+    text-align: center; 
     align-items: center;
-    margin-left: 32%;
+    margin-bottom: -200px;
+    color: rgb(255, 0, 0);
+}
+.surtexte:hover{
+    opacity: 1;
 }

@@ -1,0 +1,28 @@
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+/*-----------------------*/
+/* Colonne Auteur action largeur */
+thead th:nth-child(1) {
+    width: 5%;
+}
+/* Colonne Description action largeur */
+thead th:nth-child(2) {
+    width: 5%;
+}
+/* Colonne Date action largeur */
+thead th:nth-child(3) {
+    width: 5%;
+}
+/*-----------------------*/
+/* Ecriture dans le tableau */
+th{
+    padding: 20px;
+    color: rgb(124, 92, 92);
+    font-size: 1vw;
+}
+.art{
+    color: rgb(124, 92, 92);
+    font-weight: 400;
+}

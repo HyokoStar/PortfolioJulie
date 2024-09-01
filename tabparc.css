@@ -2,17 +2,17 @@ table {
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
-    border: 5px solid rgb(238, 218, 104);
+    border: 5px solid rgb(104, 238, 111);
     background-color: #9bbbd6;
 }
 /*-----------------------*/
 /* Colonne Auteur action largeur */
 thead th:nth-child(1) {
-    width: 1%;
+    width: 10%;
 }
 /* Colonne Description action largeur */
 thead th:nth-child(2) {
-    width: 2%;
+    width: 7%;
 }
 /* Colonne Date action largeur */
 thead th:nth-child(3) {
@@ -21,6 +21,9 @@ thead th:nth-child(3) {
 /* Colonne Lien action largeur */
 thead th:nth-child(4) {
     width: 5%;
+}
+thead th:nth-child(5) {
+    width: 3%;
 }
 /*-----------------------*/
 /* Ecriture dans le tableau */
@@ -51,9 +54,11 @@ thead th,tfoot th,tfoot td {
     );
     border: 7px solid #ffd900;
 }
+
 tbody th, tbody td {
     border: 5px solid #eeda6896;
 }
+
 /*-----------------------*/
 /* Les éléments changent la couleur des colonnes */
 tbody tr:nth-child(odd) {

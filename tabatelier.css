@@ -37,7 +37,7 @@ th,td {
 thead,tfoot {
     background: url(image/japon.png);
     color: white;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px #eeda68;
 }
 /*-----------------------*/
 /* Encadrement intérieur du tableau/haut et bas */

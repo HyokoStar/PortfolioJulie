@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annuaire GAP</title>
+    <link rel="icon" href="../acceuil/logo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <h1>PÔLE CHIRURGIE ANESTHESIE REANIMATION</h1>
+        <p>Responsable du pôle :</p>
+        <p>Cadre Supérieur de Santé :</p>
+        <p>Cadre Administatif Référent :</p>
+        <button id="loginButton" class="connect">Se connecter</button>
+
+        <!-- Formulaires pour ajouter des secteurs, métiers et personnes -->
+        <section id="gestionSecteurs" class="admin-section">
+            <h2>Gérer les Secteurs</h2>
+            <p>(Ajouter un secteur, si celui-çi n'existe pas)</p>
+            <form id="secteurForm">
+                <input type="text" id="secteurNom" placeholder="Nom du Secteur">
+                <button class="ajP" type="button" onclick="ajouterSecteur()">Ajouter Secteur</button>
+            </form>
+        </section>
+
+        <section id="gestionMetiers" class="admin-section">
+            <h2>Gérer les Métiers</h2>
+            <p>(Ajouter un métier, si celui-çi n'existe pas)</p>
+            <form id="metierForm">
+                <input type="text" id="metierNom" placeholder="Nom du Métier">
+                <button class="ajP" type="button" onclick="ajouterMetier()">Ajouter Métier</button>
+            </form>
+        </section>
+
+        <section id="gestionPersonnes" class="admin-section">
+            <h2>Gérer le Personnel</h2>
+            <p>(Ajouter une personne)</p>
+            <form id="personneForm">
+                <input type="text" id="personneNom" placeholder="Nom et Prénom">
+                <input type="text" id="personneTel" placeholder="Numéro de Téléphone">
+                <select id="secteurSelectPersonne"></select>
+                <select id="metierSelectPersonne">
+                    <option value="">  </option>
+                </select>                
+                <button class="ajP" type="button" onclick="ajouterPersonne()">Ajouter Personne</button>
+            </form>
+        </section>
+
+<!--    <section id="resetData" class="admin-section">
+            <button type="button" onclick="supprimerToutesLesDonnees()">Supprimer toutes les données</button>
+        </section>-->
+
+            <!-- Barre de recherche --> 
+    <div class="search-container"> 
+        <input type="text" class="search-bar" placeholder="Recherche..."> 
+        <button type="submit" class="search-button">Rechercher</button> 
+    </div> 
+    <!-- Pop-up de résultats de recherche --> 
+    <div id="popup-container"></div>
+
+        <!-- Tableau des données -->
+        <section id="tableauDonnees">
+            <h2>Tableau du personel</h2>
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>Secteur</th>
+                        <th>Métier</th>
+                        <th>Personnel</th>
+                        <th>Téléphone</th>
+                        <th id="actionsColumn">Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- HTML for the pop-up to modify a person -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Modifier Personne</h2>
+            <form id="modifierForm">
+                <input type="text" id="modifierNom" placeholder="Nom et Prénom">
+                <input type="text" id="modifierTel" placeholder="Numéro de Téléphone">
+                <select id="modifierSecteur"></select>
+                <select id="modifierMetier"></select>
+                <button type="button" id="validerModificationButton">Enregistrer</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+    <script src="menu.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

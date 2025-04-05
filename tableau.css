@@ -39,37 +39,37 @@
 /*-----------------------*/
 /* élément permettent de changer la taille des barres intérieurs */
 .html {
-    width: 25%;
+    width: 65%;
 }
 .css {
-    width: 5%;
+    width: 52%;
 }
 .java {
-    width: 5%;
+    width: 25%;
 }
 .python {
-    width: 3%;
-}
-.javaS {
-    width: 1%;
-}
-.php {
     width: 5%;
 }
+.javaS {
+    width: 35%;
+}
+.php {
+    width: 25%;
+}
 .mysql {
-    width: 3%;
-}
-.vscode {
-    width: 45%;
-}
-.github {
-    width: 45%;
-}
-.xampp {
     width: 30%;
 }
+.vscode {
+    width: 75%;
+}
+.github {
+    width: 73%;
+}
+.xampp {
+    width: 55%;
+}
 .my {
-    width: 20%;
+    width: 50%;
 }
 .int {
     width: 10%;
@@ -90,7 +90,7 @@
     width: 5%;
 }
 .power {
-    width: 1%;
+    width: 5%;
 }
 .sketch {
     width: 10%;
